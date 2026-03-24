@@ -1,8 +1,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Se estiver usando OrangeFox 12.1, o caminho correto da config costuma ser este:
-$(call inherit-product, vendor/recovery/config/common.mk)
+# Herdar configurações do PitchBlack
+$(call inherit-product, vendor/pb/config/common.mk)
 
 PRODUCT_DEVICE := p80
 PRODUCT_NAME := twrp_p80
